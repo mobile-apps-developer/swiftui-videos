@@ -30,6 +30,9 @@
 		2DBB869D247C23C500D795E1 /* VideoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB869C247C23C500D795E1 /* VideoDetailsViewModel.swift */; };
 		2DBB86A0247C23C500D795E1 /* DownloadWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB869F247C23C500D795E1 /* DownloadWorker.swift */; };
 		2DBB86A1247C23C500D795E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB8687247C23C500D795E1 /* Constants.swift */; };
+		2DBB86AB247C269400D795E1 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DBB86A6247C269400D795E1 /* videos.json */; };
+		2DBB86AC247C269400D795E1 /* VideosFetcherMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86A8247C269400D795E1 /* VideosFetcherMocks.swift */; };
+		2DBB86AD247C269500D795E1 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86A9247C269400D795E1 /* VideoTests.swift */; };
 		BCE1EE81DD2498705B2D3D1E /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9477778EAD44E361C49E92AC /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework */; };
 		EDF06E38B93D064C16D53EBC /* Pods_VideoGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B6D1627650C07ACD39547E /* Pods_VideoGalleryApp.framework */; };
 		F660B872DA6C9D86C1C8809E /* Pods_VideoGalleryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EBD145A006058EE5BD8D8 /* Pods_VideoGalleryAppTests.framework */; };
@@ -81,6 +84,9 @@
 		2DBB869A247C23C500D795E1 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		2DBB869C247C23C500D795E1 /* VideoDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewModel.swift; sourceTree = "<group>"; };
 		2DBB869F247C23C500D795E1 /* DownloadWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadWorker.swift; sourceTree = "<group>"; };
+		2DBB86A6247C269400D795E1 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		2DBB86A8247C269400D795E1 /* VideosFetcherMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosFetcherMocks.swift; sourceTree = "<group>"; };
+		2DBB86A9247C269400D795E1 /* VideoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTests.swift; sourceTree = "<group>"; };
 		37B6D1627650C07ACD39547E /* Pods_VideoGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		618F993F2140C315C114DE5A /* Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoGalleryApp-VideoGalleryAppUITests/Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67F9FB8C89EEE4DFAE2F673C /* Pods-VideoGalleryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoGalleryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoGalleryAppTests/Pods-VideoGalleryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +178,9 @@
 		2DBB8662247C221C00D795E1 /* VideoGalleryAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				2DBB86A5247C269400D795E1 /* MockResponses */,
+				2DBB86A2247C269400D795E1 /* Mocks */,
+				2DBB86A9247C269400D795E1 /* VideoTests.swift */,
 				2DBB8663247C221C00D795E1 /* VideoGalleryAppTests.swift */,
 				2DBB8665247C221C00D795E1 /* Info.plist */,
 			);
@@ -258,6 +267,22 @@
 				2DBB869F247C23C500D795E1 /* DownloadWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		2DBB86A2247C269400D795E1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2DBB86A8247C269400D795E1 /* VideosFetcherMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2DBB86A5247C269400D795E1 /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				2DBB86A6247C269400D795E1 /* videos.json */,
+			);
+			path = MockResponses;
 			sourceTree = "<group>";
 		};
 		6CE4644451B56DC66D0200B5 /* Frameworks */ = {
@@ -402,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBB86AB247C269400D795E1 /* videos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +572,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBB86AC247C269400D795E1 /* VideosFetcherMocks.swift in Sources */,
+				2DBB86AD247C269500D795E1 /* VideoTests.swift in Sources */,
 				2DBB8664247C221C00D795E1 /* VideoGalleryAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
