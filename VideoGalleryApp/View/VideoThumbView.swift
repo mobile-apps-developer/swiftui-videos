@@ -3,11 +3,15 @@ import SwiftUI
 
 struct VideoThumbView: View {
 
+    // MARK: - Properties
+
+    let video: Video
+
     // MARK: - View
 
     var body: some View {
         HStack {
-            WebImage(url: URL(string: "https://i.picsum.photos/id/477/2000/2000.jpg"))
+            WebImage(url: URL(string: video.thumbnail))
                 .resizable()
                 .aspectRatio(1.0, contentMode: .fit)
                 .frame(
@@ -18,8 +22,9 @@ struct VideoThumbView: View {
                 .background(Color(UIColor.systemBackground))
                 .cornerRadius(Constants.Metric.cornerRadius)
                 .padding(Constants.Metric.padding)
-            Text("How To Hold Your iPhone When Taking Photos")
+            Text(video.name)
                 .font(.subheadline)
         }
     }
 }
+

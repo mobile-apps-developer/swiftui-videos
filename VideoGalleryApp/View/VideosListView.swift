@@ -12,8 +12,8 @@ struct VideosListView: View {
         List {
             ForEach(videos, id: \.self) { video in
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: VideoDetailView()) {
-                        VideoThumbView()
+                    NavigationLink(destination: VideoDetailView(selectedVideo: video)) {
+                        VideoThumbView(video: video)
                     }
                 }
             }
