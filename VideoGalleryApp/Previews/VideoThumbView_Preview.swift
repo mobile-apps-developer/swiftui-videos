@@ -1,5 +1,7 @@
 import SwiftUI
 
+// MARK: - VideoThumb Preview
+
 struct VideoThumbView_Previews: PreviewProvider {
     static var previews: some View {
         VideoThumbView(video: Video(

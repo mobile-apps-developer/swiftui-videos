@@ -33,6 +33,9 @@
 		2DBB86AB247C269400D795E1 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DBB86A6247C269400D795E1 /* videos.json */; };
 		2DBB86AC247C269400D795E1 /* VideosFetcherMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86A8247C269400D795E1 /* VideosFetcherMocks.swift */; };
 		2DBB86AD247C269500D795E1 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86A9247C269400D795E1 /* VideoTests.swift */; };
+		2DBB86B1247C50A100D795E1 /* VideoThumbView_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86AE247C50A100D795E1 /* VideoThumbView_Preview.swift */; };
+		2DBB86B2247C50A100D795E1 /* ProgressBar_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86AF247C50A100D795E1 /* ProgressBar_Preview.swift */; };
+		2DBB86B3247C50A100D795E1 /* VideoDetailView_Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB86B0247C50A100D795E1 /* VideoDetailView_Preview.swift */; };
 		BCE1EE81DD2498705B2D3D1E /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9477778EAD44E361C49E92AC /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework */; };
 		EDF06E38B93D064C16D53EBC /* Pods_VideoGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B6D1627650C07ACD39547E /* Pods_VideoGalleryApp.framework */; };
 		F660B872DA6C9D86C1C8809E /* Pods_VideoGalleryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EBD145A006058EE5BD8D8 /* Pods_VideoGalleryAppTests.framework */; };
@@ -87,6 +90,9 @@
 		2DBB86A6247C269400D795E1 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		2DBB86A8247C269400D795E1 /* VideosFetcherMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosFetcherMocks.swift; sourceTree = "<group>"; };
 		2DBB86A9247C269400D795E1 /* VideoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTests.swift; sourceTree = "<group>"; };
+		2DBB86AE247C50A100D795E1 /* VideoThumbView_Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoThumbView_Preview.swift; sourceTree = "<group>"; };
+		2DBB86AF247C50A100D795E1 /* ProgressBar_Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar_Preview.swift; sourceTree = "<group>"; };
+		2DBB86B0247C50A100D795E1 /* VideoDetailView_Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailView_Preview.swift; sourceTree = "<group>"; };
 		37B6D1627650C07ACD39547E /* Pods_VideoGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		618F993F2140C315C114DE5A /* Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoGalleryApp-VideoGalleryAppUITests/Pods-VideoGalleryApp-VideoGalleryAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		67F9FB8C89EEE4DFAE2F673C /* Pods-VideoGalleryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoGalleryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoGalleryAppTests/Pods-VideoGalleryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +229,9 @@
 		2DBB867E247C23C500D795E1 /* Previews */ = {
 			isa = PBXGroup;
 			children = (
+				2DBB86AF247C50A100D795E1 /* ProgressBar_Preview.swift */,
+				2DBB86B0247C50A100D795E1 /* VideoDetailView_Preview.swift */,
+				2DBB86AE247C50A100D795E1 /* VideoThumbView_Preview.swift */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -548,8 +557,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBB86B2247C50A100D795E1 /* ProgressBar_Preview.swift in Sources */,
 				2DBB8697247C23C500D795E1 /* VideoDescriptionView.swift in Sources */,
 				2DBB864D247C221600D795E1 /* AppDelegate.swift in Sources */,
+				2DBB86B1247C50A100D795E1 /* VideoThumbView_Preview.swift in Sources */,
 				2DBB864F247C221600D795E1 /* SceneDelegate.swift in Sources */,
 				2DBB8695247C23C500D795E1 /* VideoPreview.swift in Sources */,
 				2DBB8686247C23C500D795E1 /* VideoDetailView.swift in Sources */,
@@ -564,6 +575,7 @@
 				2DBB869B247C23C500D795E1 /* ProgressBar.swift in Sources */,
 				2DBB8688247C23C500D795E1 /* Constants.swift in Sources */,
 				2DBB86A0247C23C500D795E1 /* DownloadWorker.swift in Sources */,
+				2DBB86B3247C50A100D795E1 /* VideoDetailView_Preview.swift in Sources */,
 				2DBB869D247C23C500D795E1 /* VideoDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

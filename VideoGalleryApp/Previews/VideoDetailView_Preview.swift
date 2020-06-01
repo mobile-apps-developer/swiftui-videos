@@ -1,5 +1,7 @@
 import SwiftUI
 
+// MARK: - VideoDetailView Preview
+
 struct VideoDetailView_Previews: PreviewProvider {
     static var previews: some View {
         VideoDetailView(
