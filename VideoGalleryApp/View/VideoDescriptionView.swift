@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct VideoDescriptionView: View {
+
+    // MARK: -Properties
+
     let title: String
     let videoDescription: String
 
