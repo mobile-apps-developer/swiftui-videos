@@ -9,7 +9,7 @@ struct VideosListView: View {
                 NavigationLink(
                     destination: VideoDetailView(selectedDate: date)
                 ) {
-                    Text("\(date)")
+                    VideoThumbView()
                 }
             }.onDelete { indices in
                 indices.forEach { self.dates.remove(at: $0) }

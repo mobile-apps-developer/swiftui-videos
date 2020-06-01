@@ -4,6 +4,17 @@ import SwiftUI
 
 enum Constants {}
 
+// MARK: - Metric values
+
+extension Constants {
+    enum Metric {
+        static let padding: CGFloat = 8.0
+        static let cornerRadius: CGFloat = 5.0
+        static let thumbImageHeight: CGFloat = 60.0
+        static let thumbImageWidth: CGFloat = 60.0
+    }
+}
+
 // MARK: - Texts
 
 extension Constants {
