@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9FFC1A24850D8500226FCB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D9FFC1924850D8400226FCB /* README.md */; };
 		2DBB864D247C221600D795E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB864C247C221600D795E1 /* AppDelegate.swift */; };
 		2DBB864F247C221600D795E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB864E247C221600D795E1 /* SceneDelegate.swift */; };
 		2DBB8651247C221600D795E1 /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB8650247C221600D795E1 /* RootContentView.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9FFC1924850D8400226FCB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DBB8649247C221600D795E1 /* VideoGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBB864C247C221600D795E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DBB864E247C221600D795E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		2DBB8640247C221600D795E1 = {
 			isa = PBXGroup;
 			children = (
+				2D9FFC1924850D8400226FCB /* README.md */,
 				2DBB864B247C221600D795E1 /* VideoGalleryApp */,
 				2DBB8662247C221C00D795E1 /* VideoGalleryAppTests */,
 				2DBB866D247C221C00D795E1 /* VideoGalleryAppUITests */,
@@ -428,6 +431,7 @@
 			files = (
 				2DBB8659247C221C00D795E1 /* LaunchScreen.storyboard in Resources */,
 				2DBB8656247C221C00D795E1 /* Preview Assets.xcassets in Resources */,
+				2D9FFC1A24850D8500226FCB /* README.md in Resources */,
 				2DBB8653247C221C00D795E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
