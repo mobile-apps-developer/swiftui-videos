@@ -10,6 +10,15 @@ struct VideoDetailView: View {
             } else {
                 Text("Detail view content goes here")
             }
-        }.navigationBarTitle(Text("Detail"))
+        }
+        .navigationBarItems(
+            trailing: Button(action: {}) {
+                HStack {
+                    Text(Constants.Texts.downloadVideo)
+                    Image(systemName: Constants.SFSymbols.squardAndArrowDown)
+                }
+            }
+        )
+        .navigationBarTitle("", displayMode: .inline)
     }
 }

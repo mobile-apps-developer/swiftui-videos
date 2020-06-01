@@ -13,7 +13,7 @@ struct RootContentView: View {
     var body: some View {
         NavigationView {
             VideosListView(dates: $dates)
-                .navigationBarTitle(Text("Master"))
+                .navigationBarTitle(Text(Constants.Texts.videos))
                 .navigationBarItems(
                     leading: EditButton(),
                     trailing: Button(
