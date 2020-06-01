@@ -1,31 +1,28 @@
+import Combine
 import SwiftUI
 
-private let dateFormatter: DateFormatter = {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .medium
-    dateFormatter.timeStyle = .medium
-    return dateFormatter
-}()
-
 struct RootContentView: View {
-    @State private var dates = [Date]()
+
+    // MARK: - Observed objects
+
+    @ObservedObject private var viewModel = VideoListViewModel()
+
+    // MARK: - View
 
     var body: some View {
         NavigationView {
-            VideosListView(dates: $dates)
-                .navigationBarTitle(Text(Constants.Texts.videos))
-                .navigationBarItems(
-                    leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation { self.dates.insert(Date(), at: 0) }
-                        }
-                    ) {
-                        Image(systemName: "plus")
-                    }
-                )
-            VideoDetailView()
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            if viewModel.isLoading {
+                Text(Constants.Texts.loading)
+                    .accessibility(identifier: Constants.AccessibilityIndentifiers.loadingTextIdentifier)
+            } else {
+                VideosListView(videos: self.viewModel.videos)
+                    .navigationBarTitle(Text(Constants.Texts.videos))
+            }
+        }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
+        .onAppear(perform: {
+            self.viewModel.fetchVideos()
+        })
     }
 }
 

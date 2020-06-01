@@ -1,6 +1,6 @@
 import Foundation
 
-struct Video: Codable {
+struct Video: Codable, Hashable {
 
     // MARK: - Properties
 
@@ -9,6 +9,12 @@ struct Video: Codable {
     let thumbnail: String
     let videoDescription: String
     let videoLink: String
+
+    // MARK: - Hashing Method
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 
     // MARK: - Coding Keys
 

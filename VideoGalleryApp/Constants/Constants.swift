@@ -34,3 +34,16 @@ extension Constants {
         static let squardAndArrowDown = "square.and.arrow.down"
     }
 }
+
+// MARK: - AccessibilityIndentifiers
+
+extension Constants {
+    enum AccessibilityIndentifiers {
+        static let downloadProgressBarIdentifier = "VideoDownloadProgressBar"
+        static let playVideoButtonIdentifier = "PlayVideoButton"
+        static let videoListTableIdentifier = "VideoListTable"
+        static let cancelDownloadButtonIdentifier = "CancelDownloadButton"
+        static let downloadVideoButtonIdentifier = "DownloadVideoButton"
+        static let loadingTextIdentifier = "LoadingText"
+    }
+}

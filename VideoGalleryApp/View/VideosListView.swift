@@ -1,19 +1,23 @@
 import SwiftUI
 
 struct VideosListView: View {
-    @Binding var dates: [Date]
+
+    // MARK: - Properties
+
+    let videos: [Video]
+
+    // MARK: - View
 
     var body: some View {
         List {
-            ForEach(dates, id: \.self) { date in
-                NavigationLink(
-                    destination: VideoDetailView(selectedDate: date)
-                ) {
-                    VideoThumbView()
+            ForEach(videos, id: \.self) { video in
+                ZStack(alignment: .leading) {
+                    NavigationLink(destination: VideoDetailView()) {
+                        VideoThumbView()
+                    }
                 }
-            }.onDelete { indices in
-                indices.forEach { self.dates.remove(at: $0) }
             }
         }
     }
 }
+
