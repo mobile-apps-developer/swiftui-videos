@@ -29,6 +29,7 @@
 		2DBB869B247C23C500D795E1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB869A247C23C500D795E1 /* ProgressBar.swift */; };
 		2DBB869D247C23C500D795E1 /* VideoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB869C247C23C500D795E1 /* VideoDetailsViewModel.swift */; };
 		2DBB86A0247C23C500D795E1 /* DownloadWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB869F247C23C500D795E1 /* DownloadWorker.swift */; };
+		2DBB86A1247C23C500D795E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBB8687247C23C500D795E1 /* Constants.swift */; };
 		BCE1EE81DD2498705B2D3D1E /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9477778EAD44E361C49E92AC /* Pods_VideoGalleryApp_VideoGalleryAppUITests.framework */; };
 		EDF06E38B93D064C16D53EBC /* Pods_VideoGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B6D1627650C07ACD39547E /* Pods_VideoGalleryApp.framework */; };
 		F660B872DA6C9D86C1C8809E /* Pods_VideoGalleryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EBD145A006058EE5BD8D8 /* Pods_VideoGalleryAppTests.framework */; };
@@ -554,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DBB866F247C221C00D795E1 /* VideoGalleryAppUITests.swift in Sources */,
+				2DBB86A1247C23C500D795E1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
