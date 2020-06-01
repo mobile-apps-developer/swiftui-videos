@@ -1,14 +1,21 @@
 import SwiftUI
 
 struct VideoDetailView: View {
-    var selectedDate: Date?
+    // MARK: - Properties
+
+    let selectedVideo: Video
+
+    // MARK: - View
 
     var body: some View {
-        Group {
-            if selectedDate != nil {
-                Text("\(selectedDate!)")
-            } else {
-                Text("Detail view content goes here")
+        ScrollView {
+            VStack {
+                VideoPreview(thumbnailURL: selectedVideo.thumbnail) {
+                }
+                VideoDescriptionView(
+                    title: selectedVideo.name,
+                    videoDescription: selectedVideo.videoDescription
+                )
             }
         }
         .navigationBarItems(

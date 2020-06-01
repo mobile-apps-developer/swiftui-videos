@@ -12,6 +12,8 @@ extension Constants {
         static let cornerRadius: CGFloat = 5.0
         static let thumbImageHeight: CGFloat = 60.0
         static let thumbImageWidth: CGFloat = 60.0
+        static let videoPlayButtonWidth: CGFloat = 50.0
+        static let videoPlayButtonHeight: CGFloat = 50.0
     }
 }
 
